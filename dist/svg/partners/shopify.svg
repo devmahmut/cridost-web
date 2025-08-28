@@ -1,0 +1,8 @@
+<svg width="120" height="40" viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20.5 8.5L18.5 16.5L16.5 8.5H20.5Z" fill="#95BF47"/>
+  <path d="M16.5 8.5L14.5 16.5L12.5 8.5H16.5Z" fill="#5E8E3E"/>
+  <path d="M12.5 8.5L10.5 16.5L8.5 8.5H12.5Z" fill="#95BF47"/>
+  <path d="M8.5 8.5L6.5 16.5L4.5 8.5H8.5Z" fill="#5E8E3E"/>
+  <path d="M4.5 8.5L2.5 16.5L0.5 8.5H4.5Z" fill="#95BF47"/>
+  <text x="25" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#95BF47">Shopify</text>
+</svg>
