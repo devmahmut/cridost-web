@@ -42,14 +42,49 @@ const translations: Translation = {
     service_8_desc: "Marka stratejisi, pazar analizi, rekabet analizi ve dijital dönüşüm danışmanlığı.",
     service_9: "Hosting & Bakım",
     service_9_desc: "Güvenli hosting, SSL sertifikası, düzenli yedekleme, güvenlik güncellemeleri ve teknik destek.",
+    // Yeni servis çevirileri
+    service_business_strategy: "İş & Strateji",
+    service_business_strategy_desc: "Büyüme ve başarıyı sürükleyen stratejik iş çözümleri",
+    service_business_growth_hacker: "İş Büyüme Hacker'ı",
+    service_business_development: "İş Geliştirme",
+    service_project_management: "Proje Yönetimi",
+    service_business_intelligence: "İş Zekası",
+    service_software_dev: "Yazılım Geliştirme",
+    service_software_dev_desc: "Modern teknolojilerle uçtan uca yazılım çözümleri",
+    service_end_to_end_dev: "Uçtan Uca Yazılım Geliştirme",
+    service_ui_ux_design: "UI & UX Tasarımı",
+    service_devops: "DevOps",
+    service_cyber_security: "Siber Güvenlik",
+    service_data_analytics: "Veri & Analitik",
+    service_data_analytics_desc: "Veriyi eyleme dönüştürülebilir içgörülere dönüştürün",
+    service_data_analysis: "Veri Analizi",
+    service_data_engineering: "Veri Mühendisliği",
+    service_data_management: "Veri Yönetimi",
+    service_ecommerce: "E-Ticaret Çözümleri",
+    service_ecommerce_desc: "ikas ve önde gelen platformlarla desteklenen eksiksiz e-ticaret çözümleri",
+    service_ikas_dev: "ikas Mağaza Geliştirme",
+    service_shopify_woo_dev: "Shopify & WooCommerce Geliştirme",
+    service_custom_ecommerce: "Özel E-ticaret Platformları",
+    service_payment_integration: "Ödeme Sistemleri Entegrasyonu (Stripe, PayPal, iyzico)",
+    service_inventory_management: "Envanter & Sipariş Yönetimi",
+    service_seo_optimization: "SEO & Performans Optimizasyonu",
+    services_subtitle: "Kapsamlı dijital çözümlerimizle işinizi büyütün. Teknik detayları bize bırakın, siz sadece sonuçlara odaklanın.",
+    services_description: "Her hizmetimizde en son teknolojileri kullanarak, sizin için en iyi sonucu elde ediyoruz. Performans, güvenlik ve kullanıcı deneyimi konularında endişelenmeyin.",
+    partners_subtitle: "100,000+ büyüyen ekip, dijital çözümleri hızlıca inşa etmek için CriDost'u kullanıyor.",
+    partners_description: "Projelerimizi güçlendiren global çözüm ortaklarımız ile dijital dünyada iz bırakıyoruz. En son teknolojileri ve platformları kullanarak sizin için en iyi sonucu elde ediyoruz.",
     partners_title: "Çözüm Ortaklarımız",
+    why_subtitle: "Neden CriDost'u seçmelisiniz? Çünkü biz sizin için her detayı düşünüyoruz.",
+    why_description: "Teknik karmaşıklıkları sizin için çözüyoruz. Siz sadece hedeflerinize odaklanın, geri kalan her şeyi biz halledelim.",
     why_title: "Neden CriDost",
+    faq_subtitle: "Sıkça sorulan sorular ve cevapları. Projelerimiz hakkında merak ettiğiniz her şey.",
+    faq_description: "Teknik detaylar ve süreçler hakkında endişelenmeyin. Her adımda size rehberlik ediyoruz ve tüm sorularınızı yanıtlıyoruz.",
     why_clients: "Mutlu Müşteri",
+    contact_location: "Bursa, Türkiye",
     why_projects: "Başarılı Proje",
     why_satisfaction: "Memnuniyet Oranı",
-    why_experience: "Yıllık Deneyim",
+    why_experience: "Deneyim",
     why_coffee: "Kahve",
-    why_discussions: "Sonsuz Çılgın Tartışmalar",
+    why_discussions: "Çılgın Fikirler",
     faq_title: "Sıkça Sorulan Sorular",
     faq_q1: "Proje süresi ne kadar?",
     faq_a1: "Web sitesi projeleri 2-4 hafta, web uygulamaları 1-3 ay sürmektedir. Proje karmaşıklığına göre değişir.",
@@ -112,14 +147,49 @@ const translations: Translation = {
     service_8_desc: "Brand strategy, market analysis, competitive analysis and digital transformation consulting.",
     service_9: "Hosting & Maintenance",
     service_9_desc: "Secure hosting, SSL certificates, regular backups, security updates and technical support.",
+    // Yeni servis çevirileri
+    service_business_strategy: "Business & Strategy",
+    service_business_strategy_desc: "Strategic business solutions to drive growth and success",
+    service_business_growth_hacker: "Business Growth Hacker",
+    service_business_development: "Business Development",
+    service_project_management: "Project Management",
+    service_business_intelligence: "Business Intelligence",
+    service_software_dev: "Software Development",
+    service_software_dev_desc: "End-to-end software solutions with modern technologies",
+    service_end_to_end_dev: "End-to-End Software Development",
+    service_ui_ux_design: "UI & UX Design",
+    service_devops: "DevOps",
+    service_cyber_security: "Cyber Security",
+    service_data_analytics: "Data & Analytics",
+    service_data_analytics_desc: "Transform data into actionable insights",
+    service_data_analysis: "Data Analysis",
+    service_data_engineering: "Data Engineering",
+    service_data_management: "Data Management",
+    service_ecommerce: "E-Commerce Solutions",
+    service_ecommerce_desc: "Complete e-commerce solutions powered by ikas and leading platforms",
+    service_ikas_dev: "ikas Store Development",
+    service_shopify_woo_dev: "Shopify & WooCommerce Development",
+    service_custom_ecommerce: "Custom E-commerce Platforms",
+    service_payment_integration: "Payment Systems Integration (Stripe, PayPal, iyzico)",
+    service_inventory_management: "Inventory & Order Management",
+    service_seo_optimization: "SEO & Performance Optimization",
+    services_subtitle: "Grow your business with our comprehensive digital solutions. Leave the technical details to us, you just focus on results.",
+    services_description: "We achieve the best results for you by using the latest technologies in every service. Don't worry about performance, security and user experience.",
+    partners_subtitle: "100,000+ growing teams use CriDost to quickly build digital solutions.",
+    partners_description: "We make our mark in the digital world with our global solution partners that power our projects. We achieve the best results for you using the latest technologies and platforms.",
     partners_title: "Solution Partners",
+    why_subtitle: "Why should you choose CriDost? Because we think of every detail for you.",
+    why_description: "We solve technical complexities for you. You just focus on your goals, we handle everything else.",
     why_title: "Why CriDost",
+    faq_subtitle: "Frequently asked questions and answers. Everything you're curious about our projects.",
+    faq_description: "Don't worry about technical details and processes. We guide you at every step and answer all your questions.",
     why_clients: "Happy Clients",
+    contact_location: "Bursa, Turkey",
     why_projects: "Successful Projects",
     why_satisfaction: "Satisfaction Rate",
-    why_experience: "Years Experience",
+    why_experience: "Experience",
     why_coffee: "Cups of Coffee",
-    why_discussions: "Endless Crazy Discussions",
+    why_discussions: "Crazy Ideas",
     faq_title: "Frequently Asked Questions",
     faq_q1: "How long does a project take?",
     faq_a1: "Website projects take 2-4 weeks, web applications 1-3 months. It varies according to project complexity.",
@@ -182,14 +252,49 @@ const translations: Translation = {
     service_8_desc: "Markenstrategie, Marktanalyse, Wettbewerbsanalyse und Beratung zur digitalen Transformation.",
     service_9: "Hosting & Wartung",
     service_9_desc: "Sicheres Hosting, SSL-Zertifikate, regelmäßige Backups, Sicherheitsupdates und technischer Support.",
+    // Yeni servis çevirileri
+    service_business_strategy: "Geschäft & Strategie",
+    service_business_strategy_desc: "Strategische Geschäftslösungen für Wachstum und Erfolg",
+    service_business_growth_hacker: "Business Growth Hacker",
+    service_business_development: "Geschäftsentwicklung",
+    service_project_management: "Projektmanagement",
+    service_business_intelligence: "Geschäftsintelligenz",
+    service_software_dev: "Softwareentwicklung",
+    service_software_dev_desc: "End-to-End-Softwarelösungen mit modernen Technologien",
+    service_end_to_end_dev: "End-to-End-Softwareentwicklung",
+    service_ui_ux_design: "UI & UX Design",
+    service_devops: "DevOps",
+    service_cyber_security: "Cybersicherheit",
+    service_data_analytics: "Daten & Analytik",
+    service_data_analytics_desc: "Transformieren Sie Daten in umsetzbare Erkenntnisse",
+    service_data_analysis: "Datenanalyse",
+    service_data_engineering: "Datentechnik",
+    service_data_management: "Datenverwaltung",
+    service_ecommerce: "E-Commerce-Lösungen",
+    service_ecommerce_desc: "Vollständige E-Commerce-Lösungen mit ikas und führenden Plattformen",
+    service_ikas_dev: "ikas-Shop-Entwicklung",
+    service_shopify_woo_dev: "Shopify & WooCommerce-Entwicklung",
+    service_custom_ecommerce: "Maßgeschneiderte E-Commerce-Plattformen",
+    service_payment_integration: "Zahlungssystem-Integration (Stripe, PayPal, iyzico)",
+    service_inventory_management: "Lager- & Auftragsverwaltung",
+    service_seo_optimization: "SEO & Leistungsoptimierung",
+    services_subtitle: "Wachsen Sie Ihr Geschäft mit unseren umfassenden digitalen Lösungen. Überlassen Sie uns die technischen Details, konzentrieren Sie sich auf die Ergebnisse.",
+    services_description: "Wir erzielen die besten Ergebnisse für Sie durch den Einsatz der neuesten Technologien in jedem Service. Machen Sie sich keine Sorgen um Leistung, Sicherheit und Benutzererfahrung.",
+    partners_subtitle: "100.000+ wachsende Teams nutzen CriDost, um schnell digitale Lösungen zu entwickeln.",
+    partners_description: "Wir hinterlassen unsere Spuren in der digitalen Welt mit unseren globalen Lösungspartnern, die unsere Projekte unterstützen. Wir erzielen die besten Ergebnisse für Sie durch den Einsatz der neuesten Technologien und Plattformen.",
     partners_title: "Lösungspartner",
+    why_subtitle: "Warum sollten Sie CriDost wählen? Weil wir an jedes Detail für Sie denken.",
+    why_description: "Wir lösen technische Komplexitäten für Sie. Konzentrieren Sie sich einfach auf Ihre Ziele, wir kümmern uns um alles andere.",
     why_title: "Warum CriDost",
+    faq_subtitle: "Häufig gestellte Fragen und Antworten. Alles, was Sie über unsere Projekte wissen möchten.",
+    faq_description: "Machen Sie sich keine Sorgen um technische Details und Prozesse. Wir begleiten Sie bei jedem Schritt und beantworten alle Ihre Fragen.",
     why_clients: "Zufriedene Kunden",
+    contact_location: "Bursa, Türkei",
     why_projects: "Erfolgreiche Projekte",
     why_satisfaction: "Zufriedenheitsrate",
-    why_experience: "Jahre Erfahrung",
+    why_experience: "Erfahrung",
     why_coffee: "Tassen Kaffee",
-    why_discussions: "Endlose Verrückte Diskussionen",
+    why_discussions: "Verrückte Ideen",
     faq_title: "Häufig gestellte Fragen",
     faq_q1: "Wie lange dauert ein Projekt?",
     faq_a1: "Website-Projekte dauern 2-4 Wochen, Webanwendungen 1-3 Monate. Je nach Projektkomplexität.",
@@ -252,14 +357,49 @@ const translations: Translation = {
     service_8_desc: "Estrategia de marca, análisis de mercado, análisis competitivo y consultoría de transformación digital.",
     service_9: "Hosting y Mantenimiento",
     service_9_desc: "Hosting seguro, certificados SSL, copias de seguridad regulares, actualizaciones de seguridad y soporte técnico.",
+    // Yeni servis çevirileri
+    service_business_strategy: "Negocio y Estrategia",
+    service_business_strategy_desc: "Soluciones estratégicas de negocio para impulsar el crecimiento y el éxito",
+    service_business_growth_hacker: "Hacker de Crecimiento Empresarial",
+    service_business_development: "Desarrollo de Negocios",
+    service_project_management: "Gestión de Proyectos",
+    service_business_intelligence: "Inteligencia Empresarial",
+    service_software_dev: "Desarrollo de Software",
+    service_software_dev_desc: "Soluciones de software integrales con tecnologías modernas",
+    service_end_to_end_dev: "Desarrollo de Software Integral",
+    service_ui_ux_design: "Diseño UI & UX",
+    service_devops: "DevOps",
+    service_cyber_security: "Ciberseguridad",
+    service_data_analytics: "Datos y Analíticas",
+    service_data_analytics_desc: "Transforma los datos en información accionable",
+    service_data_analysis: "Análisis de Datos",
+    service_data_engineering: "Ingeniería de Datos",
+    service_data_management: "Gestión de Datos",
+    service_ecommerce: "Soluciones E-Commerce",
+    service_ecommerce_desc: "Soluciones completas de e-commerce impulsadas por ikas y plataformas líderes",
+    service_ikas_dev: "Desarrollo de Tienda ikas",
+    service_shopify_woo_dev: "Desarrollo Shopify & WooCommerce",
+    service_custom_ecommerce: "Plataformas E-Commerce Personalizadas",
+    service_payment_integration: "Integración de Sistemas de Pago (Stripe, PayPal, iyzico)",
+    service_inventory_management: "Gestión de Inventario y Pedidos",
+    service_seo_optimization: "SEO y Optimización de Rendimiento",
+    services_subtitle: "Haz crecer tu negocio con nuestras soluciones digitales integrales. Déjanos los detalles técnicos, tú solo enfócate en los resultados.",
+    services_description: "Logramos los mejores resultados para ti usando las últimas tecnologías en cada servicio. No te preocupes por rendimiento, seguridad y experiencia de usuario.",
+    partners_subtitle: "100,000+ equipos en crecimiento usan CriDost para construir rápidamente soluciones digitales.",
+    partners_description: "Dejamos nuestra huella en el mundo digital con nuestros socios de solución globales que potencian nuestros proyectos. Logramos los mejores resultados para ti usando las últimas tecnologías y plataformas.",
     partners_title: "Socios de Solución",
+    why_subtitle: "¿Por qué deberías elegir CriDost? Porque pensamos en cada detalle para ti.",
+    why_description: "Resolvemos las complejidades técnicas para ti. Tú solo enfócate en tus objetivos, nosotros nos encargamos de todo lo demás.",
     why_title: "Por qué CriDost",
+    faq_subtitle: "Preguntas frecuentes y respuestas. Todo lo que te interesa saber sobre nuestros proyectos.",
+    faq_description: "No te preocupes por detalles técnicos y procesos. Te guiamos en cada paso y respondemos todas tus preguntas.",
     why_clients: "Clientes Felices",
+    contact_location: "Bursa, Turquía",
     why_projects: "Proyectos Exitosos",
     why_satisfaction: "Tasa de Satisfacción",
-    why_experience: "Años de Experiencia",
+    why_experience: "Experiencia",
     why_coffee: "Tazas de Café",
-    why_discussions: "Discusiones Locas Interminables",
+    why_discussions: "Ideas Locas",
     faq_title: "Preguntas Frecuentes",
     faq_q1: "¿Cuánto tiempo toma un proyecto?",
     faq_a1: "Los proyectos de sitios web toman 2-4 semanas, aplicaciones web 1-3 meses. Varía según la complejidad.",
@@ -322,14 +462,49 @@ const translations: Translation = {
     service_8_desc: "Stratégie de marque, analyse de marché, analyse concurrentielle et conseil en transformation digitale.",
     service_9: "Hébergement & Maintenance",
     service_9_desc: "Hébergement sécurisé, certificats SSL, sauvegardes régulières, mises à jour de sécurité et support technique.",
+    // Yeni servis çevirileri
+    service_business_strategy: "Entreprise & Stratégie",
+    service_business_strategy_desc: "Solutions stratégiques d'entreprise pour stimuler la croissance et le succès",
+    service_business_growth_hacker: "Hacker de Croissance d'Entreprise",
+    service_business_development: "Développement d'Entreprise",
+    service_project_management: "Gestion de Projet",
+    service_business_intelligence: "Intelligence d'Entreprise",
+    service_software_dev: "Développement de Logiciels",
+    service_software_dev_desc: "Solutions logicielles complètes avec des technologies modernes",
+    service_end_to_end_dev: "Développement de Logiciels Complet",
+    service_ui_ux_design: "Conception UI & UX",
+    service_devops: "DevOps",
+    service_cyber_security: "Cybersécurité",
+    service_data_analytics: "Données & Analytique",
+    service_data_analytics_desc: "Transformez les données en informations exploitables",
+    service_data_analysis: "Analyse de Données",
+    service_data_engineering: "Ingénierie des Données",
+    service_data_management: "Gestion des Données",
+    service_ecommerce: "Solutions E-Commerce",
+    service_ecommerce_desc: "Solutions e-commerce complètes alimentées par ikas et des plateformes de premier plan",
+    service_ikas_dev: "Développement de Boutique ikas",
+    service_shopify_woo_dev: "Développement Shopify & WooCommerce",
+    service_custom_ecommerce: "Plateformes E-Commerce Personnalisées",
+    service_payment_integration: "Intégration de Systèmes de Paiement (Stripe, PayPal, iyzico)",
+    service_inventory_management: "Gestion d'Inventaire et de Commandes",
+    service_seo_optimization: "SEO et Optimisation des Performances",
+    services_subtitle: "Développez votre entreprise avec nos solutions numériques complètes. Laissez-nous les détails techniques, concentrez-vous sur les résultats.",
+    services_description: "Nous obtenons les meilleurs résultats pour vous en utilisant les dernières technologies dans chaque service. Ne vous inquiétez pas des performances, de la sécurité et de l'expérience utilisateur.",
+    partners_subtitle: "100,000+ équipes en croissance utilisent CriDost pour construire rapidement des solutions numériques.",
+    partners_description: "Nous laissons notre empreinte dans le monde numérique avec nos partenaires de solution mondiaux qui alimentent nos projets. Nous obtenons les meilleurs résultats pour vous en utilisant les dernières technologies et plateformes.",
     partners_title: "Partenaires de Solution",
+    why_subtitle: "Pourquoi devriez-vous choisir CriDost? Parce que nous pensons à chaque détail pour vous.",
+    why_description: "Nous résolvons les complexités techniques pour vous. Concentrez-vous simplement sur vos objectifs, nous nous occupons de tout le reste.",
     why_title: "Pourquoi CriDost",
+    faq_subtitle: "Questions fréquemment posées et réponses. Tout ce que vous voulez savoir sur nos projets.",
+    faq_description: "Ne vous inquiétez pas des détails techniques et des processus. Nous vous guidons à chaque étape et répondons à toutes vos questions.",
     why_clients: "Clients Satisfaits",
+    contact_location: "Bursa, Turquie",
     why_projects: "Projets Réussis",
     why_satisfaction: "Taux de Satisfaction",
-    why_experience: "Années d'Expérience",
+    why_experience: "Expérience",
     why_coffee: "Tasses de Café",
-    why_discussions: "Discussions Folles Interminables",
+    why_discussions: "Idées Folles",
     faq_title: "Questions Fréquentes",
     faq_q1: "Combien de temps prend un projet?",
     faq_a1: "Les projets de sites web prennent 2-4 semaines, les applications web 1-3 mois. Varie selon la complexité.",
@@ -654,114 +829,132 @@ function App() {
     return translation;
   };
 
-  // Kullanıcının location'ına göre dil otomatik seçimi
+  // Kullanıcının location'ına göre dil otomatik seçimi - sadece ilk yüklemede
   useEffect(() => {
-    const detectUserLanguage = () => {
-      try {
-        // Browser language detection
-        const browserLang = navigator.language || navigator.languages?.[0];
-        
-        // Country detection using IP geolocation
-        fetch('https://ipapi.co/json/')
-          .then(response => response.json())
-          .then(data => {
-            const countryCode = data.country_code;
-            let detectedLang = 'EN'; // Default language
-            
-            // Country-based language mapping
-            if (countryCode === 'TR') {
-              detectedLang = 'TR';
-            } else if (countryCode === 'DE') {
-              detectedLang = 'DE';
-            } else if (countryCode === 'ES') {
-              detectedLang = 'ES';
-            } else if (countryCode === 'FR') {
-              detectedLang = 'FR';
-            } else {
-              // Browser language fallback
-              if (browserLang?.startsWith('tr')) {
+    // Local storage'dan kaydedilmiş dil tercihini kontrol et
+    const savedLanguage = localStorage.getItem('cridost_language');
+    
+    if (savedLanguage && ['TR', 'EN', 'DE', 'ES', 'FR'].includes(savedLanguage)) {
+      // Kaydedilmiş dil tercihi varsa onu kullan
+      setLanguage(savedLanguage);
+    } else {
+      // İlk kez geliyorsa otomatik dil algılama yap
+      const detectUserLanguage = () => {
+        try {
+          // Browser language detection
+          const browserLang = navigator.language || navigator.languages?.[0];
+          
+          // Country detection using IP geolocation
+          fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+              const countryCode = data.country_code;
+              let detectedLang = 'EN'; // Default language
+              
+              // Country-based language mapping
+              if (countryCode === 'TR') {
                 detectedLang = 'TR';
-              } else if (browserLang?.startsWith('de')) {
+              } else if (countryCode === 'DE') {
                 detectedLang = 'DE';
-              } else if (browserLang?.startsWith('es')) {
+              } else if (countryCode === 'ES') {
                 detectedLang = 'ES';
-              } else if (browserLang?.startsWith('fr')) {
+              } else if (countryCode === 'FR') {
                 detectedLang = 'FR';
+              } else {
+                // Browser language fallback
+                if (browserLang?.startsWith('tr')) {
+                  detectedLang = 'TR';
+                } else if (browserLang?.startsWith('de')) {
+                  detectedLang = 'DE';
+                } else if (browserLang?.startsWith('es')) {
+                  detectedLang = 'ES';
+                } else if (browserLang?.startsWith('fr')) {
+                  detectedLang = 'FR';
+                }
               }
-            }
-            
-            // Set detected language
-            if (detectedLang !== language) {
+              
+              // Set detected language
               setLanguage(detectedLang);
-            }
-          })
-          .catch(() => {
-            // Fallback to browser language if IP detection fails
-            if (browserLang?.startsWith('tr')) {
-              setLanguage('TR');
-            } else if (browserLang?.startsWith('de')) {
-              setLanguage('DE');
-            } else if (browserLang?.startsWith('es')) {
-              setLanguage('ES');
-            } else if (browserLang?.startsWith('fr')) {
-              setLanguage('FR');
-            }
-          });
-      } catch (error) {
-        console.log('Language detection failed, using default EN');
-      }
-    };
+              // Otomatik algılanan dili de local storage'a kaydet
+              localStorage.setItem('cridost_language', detectedLang);
+            })
+            .catch(() => {
+              // Fallback to browser language if IP detection fails
+              if (browserLang?.startsWith('tr')) {
+                setLanguage('TR');
+                localStorage.setItem('cridost_language', 'TR');
+              } else if (browserLang?.startsWith('de')) {
+                setLanguage('DE');
+                localStorage.setItem('cridost_language', 'DE');
+              } else if (browserLang?.startsWith('es')) {
+                setLanguage('ES');
+                localStorage.setItem('cridost_language', 'ES');
+              } else if (browserLang?.startsWith('fr')) {
+                setLanguage('FR');
+                localStorage.setItem('cridost_language', 'FR');
+              } else {
+                setLanguage('EN');
+                localStorage.setItem('cridost_language', 'EN');
+              }
+            });
+        } catch (error) {
+          console.log('Language detection failed, using default EN');
+          setLanguage('EN');
+          localStorage.setItem('cridost_language', 'EN');
+        }
+      };
 
-    detectUserLanguage();
-  }, [language]);
+      detectUserLanguage();
+    }
+  }, []); // language dependency'yi kaldırdık
 
   const services = useMemo(() => [
     { 
       icon: TrendingUp, 
-      title: "Business & Strategy", 
-      desc: "Strategic business solutions to drive growth and success",
+      title: t('service_business_strategy'), 
+      desc: t('service_business_strategy_desc'),
       subServices: [
-        "Business Growth Hacker",
-        "Business Development", 
-        "Project Management",
-        "Business Intelligence"
+        t('service_business_growth_hacker'),
+        t('service_business_development'), 
+        t('service_project_management'),
+        t('service_business_intelligence')
       ]
     },
     { 
       icon: Code, 
-      title: "Software Development", 
-      desc: "End-to-end software solutions with modern technologies",
+      title: t('service_software_dev'), 
+      desc: t('service_software_dev_desc'),
       subServices: [
-        "End-to-End Software Development",
-        "UI & UX Design",
-        "DevOps",
-        "Cyber Security"
+        t('service_end_to_end_dev'),
+        t('service_ui_ux_design'),
+        t('service_devops'),
+        t('service_cyber_security')
       ]
     },
     { 
       icon: BarChart3, 
-      title: "Data & Analytics", 
-      desc: "Transform data into actionable insights",
+      title: t('service_data_analytics'), 
+      desc: t('service_data_analytics_desc'),
       subServices: [
-        "Data Analysis",
-        "Data Engineering", 
-        "Data Management"
+        t('service_data_analysis'),
+        t('service_data_engineering'), 
+        t('service_data_management')
       ]
     },
     { 
       icon: ShoppingCart, 
-      title: "E-Commerce Solutions", 
-      desc: "Complete e-commerce solutions powered by ikas and leading platforms",
+      title: t('service_ecommerce'), 
+      desc: t('service_ecommerce_desc'),
       subServices: [
-        "ikas Store Development",
-        "Shopify & WooCommerce Development",
-        "Custom E-commerce Platforms",
-        "Payment Systems Integration (Stripe, PayPal, iyzico)",
-        "Inventory & Order Management",
-        "SEO & Performance Optimization"
+        t('service_ikas_dev'),
+        t('service_shopify_woo_dev'),
+        t('service_custom_ecommerce'),
+        t('service_payment_integration'),
+        t('service_inventory_management'),
+        t('service_seo_optimization')
       ]
     }
-  ], [language]);
+  ], [language, t]);
 
   const partners = useMemo(() => [
     // E-ticaret & CMS Platformları
@@ -888,16 +1081,16 @@ function App() {
   ], []);
 
   const stats = useMemo(() => [
-    { target: 0, suffix: '∞', label: 'Deneyim', icon: Clock },
+    { target: 0, suffix: '∞', label: t('why_experience'), icon: Clock },
     { target: 0, suffix: '∞', label: t('why_coffee'), icon: Coffee },
     { target: 0, suffix: '∞', label: t('why_discussions'), icon: Zap }
-  ], [language]);
+  ], [language, t]);
 
   const contactInfo = useMemo(() => [
     { icon: Mail, text: 'info@cridost.com' },
     { icon: Phone, text: '+90 224 123 45 67' },
-    { icon: MapPin, text: 'Bursa, Türkiye' }
-  ], []);
+    { icon: MapPin, text: t('contact_location') }
+  ], [t]);
 
   // Custom cursor
   const handleMouseMove = useCallback((e: MouseEvent) => {
@@ -922,6 +1115,10 @@ function App() {
   // Language change animation
   const handleLanguageChange = useCallback((newLang: string) => {
     if (newLang === language) return;
+    
+    // Dil değişimini local storage'a kaydet
+    localStorage.setItem('cridost_language', newLang);
+    
     setIsLanguageChanging(true);
     setTimeout(() => {
       setLanguage(newLang);
@@ -1135,18 +1332,7 @@ function App() {
         ref={heroRef}
         className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-white to-gray-50 will-change-transform"
       >
-        {/* Animated background grid */}
-        <div className="absolute inset-0 opacity-5 pointer-events-none">
-          <div className="grid grid-cols-6 md:grid-cols-12 gap-2 md:gap-4 h-full">
-            {[...Array(72)].map((_, i) => (
-              <div
-                key={i}
-                className="border border-black animate-pulse"
-                style={{ animationDelay: `${i * 50}ms` }}
-              />
-            ))}
-          </div>
-        </div>
+        
 
         <div className={`text-center px-4 max-w-6xl mx-auto transition-all duration-600 ${isLanguageChanging ? 'opacity-0 transform scale-95' : 'opacity-100 transform scale-100'}`}>
           <div className="mb-8">
@@ -1166,7 +1352,7 @@ function App() {
             </h1>
             <div className="w-32 h-1 bg-black mx-auto mb-8 animate-pulse"></div>
             <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              <CreativeText text={t('hero_description')} delay={100} />
+              <CreativeText text={t('hero_description')} delay={60} />
             </p>
           </div>
           
@@ -1174,10 +1360,19 @@ function App() {
         </div>
 
         {/* Floating elements */}
-        <div className="hidden md:block absolute top-20 left-10 w-4 h-4 bg-black animate-bounce" style={{ animationDelay: '0s' }} />
-        <div className="hidden md:block absolute top-40 right-20 w-6 h-6 border-2 border-black animate-spin" style={{ animationDuration: '8s' }} />
-        <div className="hidden md:block absolute bottom-40 left-20 w-8 h-8 bg-black transform rotate-45 animate-pulse" />
-        <div className="hidden md:block absolute bottom-20 right-10 w-3 h-3 bg-black rounded-full animate-ping" />
+        <div className="hidden md:block absolute top-40 left-20 w-20 h-auto">
+        <svg  viewBox="0 0 819 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M587.893 48.9734C663.813 80.6555 737.659 131.43 805.116 200.474C610.689 470.217 209.068 480.556 13 225.427C78.5859 134.435 157.432 72.9783 242.495 39.7149M587.893 48.9734C626.135 111.337 631.746 194.23 587.06 269.142C522.353 377.614 388.574 391.099 295.475 325.65C202.376 260.201 178.171 161.155 232.327 56.9433C235.443 50.9479 238.841 45.2046 242.495 39.7149M587.893 48.9734C472.499 0.818863 352.316 -3.22939 242.495 39.7149M485.408 203.286L445.269 150.796L464.412 86.5734L410.688 137.828L347.654 120.784L384.751 165.617L357.58 245.278L424.273 189.7L485.408 203.286Z" stroke="black" stroke-width="20"/>
+</svg>
+
+          </div>
+        <div className="hidden md:block absolute bottom-20 right-10">
+          <img 
+            src="/public/svg/hero_doodle.svg" 
+            alt="Hero Doodle" 
+            className="max-w-xl h-auto opacity-60 hover:opacity-100 transition-opacity duration-300"
+          />
+        </div>
 
         <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronDown className="w-8 h-8 md:w-10 md:h-10 text-black" />
@@ -1186,20 +1381,7 @@ function App() {
 
       {/* About Section */}
       <section id="about" className="py-16 md:py-32 bg-black text-white relative overflow-hidden">
-        {/* Animated background pattern */}
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          {[...Array(25)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-px h-full bg-white animate-pulse"
-              style={{
-                left: `${i * 2}%`,
-                animationDelay: `${i * 100}ms`,
-                animationDuration: `${2 + Math.random() * 2}s`
-              }}
-            />
-          ))}
-        </div>
+       
 
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 transition-all duration-600 ${isLanguageChanging ? 'opacity-0' : 'opacity-100'}`}>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -1261,14 +1443,11 @@ function App() {
                 {t('services_title')}
               </h2>
               <p className="text-lg md:text-xl leading-relaxed text-gray-600 max-w-lg">
-                Kapsamlı dijital çözümlerimizle işinizi büyütün. 
-                Teknik detayları bize bırakın, siz sadece sonuçlara odaklanın.
+                {t('services_subtitle')}
               </p>
               <div className="pt-4">
                 <p className="text-base text-gray-500 leading-relaxed">
-                  Her hizmetimizde en son teknolojileri kullanarak, 
-                  sizin için en iyi sonucu elde ediyoruz. 
-                  Performans, güvenlik ve kullanıcı deneyimi konularında endişelenmeyin.
+                  {t('services_description')}
                 </p>
               </div>
             </div>
@@ -1280,7 +1459,7 @@ function App() {
                 key={index}
                 onClick={() => toggleService(index)}
                 className={`group relative border-2 md:border-4 border-black p-4 md:p-6 hover:bg-black hover:text-white transition-all duration-500 cursor-pointer overflow-hidden service-card ${
-                  service.title === "E-Commerce Solutions" ? "ecommerce" : ""
+                  service.title === t('service_ecommerce') ? "ecommerce" : ""
                 } ${expandedServices.includes(index) ? 'expanded' : ''}`}
               >
                 {/* Animated background */}
@@ -1333,15 +1512,14 @@ function App() {
              {/* Left: Title & Description */}
              <div className="space-y-6">
                <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-tight">
-                 Solution Partners
+                 {t('partners_title')}
                </h2>
                <p className="text-lg md:text-xl leading-relaxed text-gray-300 max-w-lg">
-                 100,000+ büyüyen ekip, dijital çözümleri hızlıca inşa etmek için CriDost'u kullanıyor.
+                 {t('partners_subtitle')}
                </p>
                <div className="pt-4">
                  <p className="text-base text-gray-400 leading-relaxed">
-                   Projelerimizi güçlendiren global çözüm ortaklarımız ile dijital dünyada iz bırakıyoruz. 
-                   En son teknolojileri ve platformları kullanarak sizin için en iyi sonucu elde ediyoruz.
+                   {t('partners_description')}
                  </p>
                </div>
              </div>
@@ -1406,12 +1584,11 @@ function App() {
                 {t('why_title')}
               </h2>
               <p className="text-lg md:text-xl leading-relaxed text-gray-600 max-w-lg">
-                Neden CriDost'u seçmelisiniz? Çünkü biz sizin için her detayı düşünüyoruz.
+                {t('why_subtitle')}
               </p>
               <div className="pt-4">
                 <p className="text-base text-gray-500 leading-relaxed">
-                  Teknik karmaşıklıkları sizin için çözüyoruz. 
-                  Siz sadece hedeflerinize odaklanın, geri kalan her şeyi biz halledelim.
+                  {t('why_description')}
                 </p>
               </div>
             </div>
@@ -1453,13 +1630,11 @@ function App() {
                 {t('faq_title')}
               </h2>
               <p className="text-lg md:text-xl leading-relaxed text-gray-600 max-w-lg">
-                Sıkça sorulan sorular ve cevapları. 
-                Projelerimiz hakkında merak ettiğiniz her şey.
+                {t('faq_subtitle')}
               </p>
               <div className="pt-4">
                 <p className="text-base text-gray-500 leading-relaxed">
-                  Teknik detaylar ve süreçler hakkında endişelenmeyin. 
-                  Her adımda size rehberlik ediyoruz ve tüm sorularınızı yanıtlıyoruz.
+                  {t('faq_description')}
                 </p>
               </div>
             </div>

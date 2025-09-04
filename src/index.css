@@ -73,6 +73,7 @@ select:focus {
 }
 
 @media (min-width: 768px) {
+
   button:focus,
   input:focus,
   textarea:focus,
@@ -88,6 +89,7 @@ select:focus {
     opacity: 0;
     transform: translateY(100px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -99,6 +101,7 @@ select:focus {
     opacity: 0;
     transform: translateY(-20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -110,6 +113,7 @@ select:focus {
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -117,22 +121,52 @@ select:focus {
 }
 
 @keyframes glitch {
-  0% { transform: translate(0); }
-  20% { transform: translate(-2px, 2px); }
-  40% { transform: translate(-2px, -2px); }
-  60% { transform: translate(2px, 2px); }
-  80% { transform: translate(2px, -2px); }
-  100% { transform: translate(0); }
+  0% {
+    transform: translate(0);
+  }
+
+  20% {
+    transform: translate(-2px, 2px);
+  }
+
+  40% {
+    transform: translate(-2px, -2px);
+  }
+
+  60% {
+    transform: translate(2px, 2px);
+  }
+
+  80% {
+    transform: translate(2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
 }
 
 @keyframes typewriter {
-  from { width: 0; }
-  to { width: 100%; }
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .animate-slideUp {
@@ -169,9 +203,17 @@ select:focus {
 }
 
 @keyframes reveal {
-  0% { left: 0; }
-  50% { left: 0; }
-  100% { left: 100%; }
+  0% {
+    left: 0;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 /* Creative hover effects */
@@ -224,24 +266,46 @@ select:focus {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 @keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Saat animasyonları */
 @keyframes minute-hand {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes hour-hand {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(30deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
 }
 
 .animate-minute-hand {
@@ -250,38 +314,71 @@ select:focus {
 
 /* Buhar animasyonları */
 @keyframes steam-1 {
-  0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.5; }
-  50% { transform: translateY(-2px) scaleY(1.3); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-2px) scaleY(1.3);
+    opacity: 1;
+  }
 }
 
 @keyframes steam-2 {
-  0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.5; }
-  50% { transform: translateY(-2.5px) scaleY(1.4); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-2.5px) scaleY(1.4);
+    opacity: 1;
+  }
 }
 
 @keyframes steam-3 {
-  0%, 100% { transform: translateY(0) scaleY(1); opacity: 0.5; }
-  50% { transform: translateY(-1.8px) scaleY(1.2); opacity: 1; }
+
+  0%,
+  100% {
+    transform: translateY(0) scaleY(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(-1.8px) scaleY(1.2);
+    opacity: 1;
+  }
 }
 
 /* Şimşek animasyonları */
 @keyframes zap-glow {
-  0%, 100% { 
+
+  0%,
+  100% {
     filter: brightness(1);
     opacity: 0.8;
   }
-  50% { 
+
+  50% {
     filter: brightness(2);
     opacity: 1;
   }
 }
 
 @keyframes zap-spark {
-  0%, 100% { 
+
+  0%,
+  100% {
     opacity: 0;
     transform: scale(0.5);
   }
-  50% { 
+
+  50% {
     opacity: 1;
     transform: scale(1.2);
   }
@@ -298,10 +395,24 @@ select:focus {
 }
 
 @keyframes dots {
-  0%, 20% { content: ''; }
-  40% { content: '.'; }
-  60% { content: '..'; }
-  80%, 100% { content: '...'; }
+
+  0%,
+  20% {
+    content: '';
+  }
+
+  40% {
+    content: '.';
+  }
+
+  60% {
+    content: '..';
+  }
+
+  80%,
+  100% {
+    content: '...';
+  }
 }
 
 /* Parallax effect */
@@ -312,16 +423,21 @@ select:focus {
 
 /* Grid animation */
 .animated-grid {
-  background-image: 
-    linear-gradient(rgba(0,0,0,.1) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,.1) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, .1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, .1) 1px, transparent 1px);
   background-size: 20px 20px;
   animation: grid-move 20s linear infinite;
 }
 
 @keyframes grid-move {
-  0% { background-position: 0 0; }
-  100% { background-position: 20px 20px; }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 20px 20px;
+  }
 }
 
 /* Glitch text effect */
@@ -354,19 +470,37 @@ select:focus {
 }
 
 @keyframes glitch-1 {
-  0%, 14%, 15%, 49%, 50%, 99%, 100% {
+
+  0%,
+  14%,
+  15%,
+  49%,
+  50%,
+  99%,
+  100% {
     transform: translate(0, 0);
   }
-  15%, 49% {
+
+  15%,
+  49% {
     transform: translate(-2px, -2px);
   }
 }
 
 @keyframes glitch-2 {
-  0%, 20%, 21%, 62%, 63%, 99%, 100% {
+
+  0%,
+  20%,
+  21%,
+  62%,
+  63%,
+  99%,
+  100% {
     transform: translate(0, 0);
   }
-  21%, 62% {
+
+  21%,
+  62% {
     transform: translate(2px, 2px);
   }
 }
@@ -378,14 +512,22 @@ select:focus {
 }
 
 @keyframes morph {
-  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 
 /* Neon glow effect */
 .neon-glow {
-  text-shadow: 
+  text-shadow:
     0 0 5px #000,
     0 0 10px #000,
     0 0 15px #000,
@@ -394,14 +536,24 @@ select:focus {
 }
 
 @keyframes neon-flicker {
-  0%, 18%, 22%, 25%, 53%, 57%, 100% {
-    text-shadow: 
+
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow:
       0 0 5px #000,
       0 0 10px #000,
       0 0 15px #000,
       0 0 20px #000;
   }
-  20%, 24%, 55% {
+
+  20%,
+  24%,
+  55% {
     text-shadow: none;
   }
 }
@@ -414,9 +566,17 @@ select:focus {
 }
 
 @keyframes liquid-gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Magnetic effect */
@@ -435,11 +595,25 @@ select:focus {
   animation: stagger-in 0.6s ease forwards;
 }
 
-.stagger-item:nth-child(1) { animation-delay: 0.1s; }
-.stagger-item:nth-child(2) { animation-delay: 0.2s; }
-.stagger-item:nth-child(3) { animation-delay: 0.3s; }
-.stagger-item:nth-child(4) { animation-delay: 0.4s; }
-.stagger-item:nth-child(5) { animation-delay: 0.5s; }
+.stagger-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.stagger-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.stagger-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stagger-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.stagger-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
 
 @keyframes stagger-in {
   to {
@@ -450,23 +624,70 @@ select:focus {
 
 /* Responsive typography */
 @media (max-width: 768px) {
-  .text-9xl { font-size: 3rem; line-height: 1; }
-  .text-8xl { font-size: 2.5rem; line-height: 1; }
-  .text-7xl { font-size: 2rem; line-height: 1.1; }
-  .text-6xl { font-size: 1.75rem; line-height: 1.1; }
-  .text-5xl { font-size: 1.5rem; line-height: 1.2; }
-  .text-4xl { font-size: 1.25rem; line-height: 1.2; }
-  .text-3xl { font-size: 1.125rem; line-height: 1.3; }
+  .text-9xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .text-8xl {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .text-7xl {
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+
+  .text-6xl {
+    font-size: 1.75rem;
+    line-height: 1.1;
+  }
+
+  .text-5xl {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .text-4xl {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .text-3xl {
+    font-size: 1.125rem;
+    line-height: 1.3;
+  }
 }
 
 @media (max-width: 480px) {
-  .text-9xl { font-size: 2.5rem; }
-  .text-8xl { font-size: 2rem; }
-  .text-7xl { font-size: 1.75rem; }
-  .text-6xl { font-size: 1.5rem; }
-  .text-5xl { font-size: 1.25rem; }
-  .text-4xl { font-size: 1.125rem; }
-  .text-3xl { font-size: 1rem; }
+  .text-9xl {
+    font-size: 2.5rem;
+  }
+
+  .text-8xl {
+    font-size: 2rem;
+  }
+
+  .text-7xl {
+    font-size: 1.75rem;
+  }
+
+  .text-6xl {
+    font-size: 1.5rem;
+  }
+
+  .text-5xl {
+    font-size: 1.25rem;
+  }
+
+  .text-4xl {
+    font-size: 1.125rem;
+  }
+
+  .text-3xl {
+    font-size: 1rem;
+  }
 }
 
 /* High contrast mode support */
@@ -475,7 +696,7 @@ select:focus {
     border-color: #000 !important;
     color: #000 !important;
   }
-  
+
   .bg-black {
     background-color: #000 !important;
     color: #fff !important;
@@ -484,6 +705,7 @@ select:focus {
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -492,7 +714,7 @@ select:focus {
     transition-duration: 0.1s !important;
     scroll-behavior: auto !important;
   }
-  
+
   .animate-bounce,
   .animate-spin,
   .animate-ping,
@@ -518,8 +740,8 @@ select:focus {
 }
 
 .bg-noise {
-  background-image: 
-    radial-gradient(circle at 1px 1px, rgba(0,0,0,.15) 1px, transparent 0);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(0, 0, 0, .15) 1px, transparent 0);
   background-size: 20px 20px;
 }
 
@@ -594,19 +816,19 @@ select:focus {
   .parallax {
     transform: none !important;
   }
-  
+
   /* Reduce animation complexity on mobile */
   .animate-bounce,
   .animate-spin {
     animation-duration: 1s;
   }
-  
+
   /* Simplify hover effects on touch devices */
   @media (hover: none) {
     .group:hover .group-hover\:scale-125 {
       transform: scale(1.05);
     }
-    
+
     .hover\:scale-105:hover {
       transform: scale(1.02);
     }
@@ -615,6 +837,7 @@ select:focus {
 
 /* Touch device optimizations */
 @media (hover: none) and (pointer: coarse) {
+
   /* Larger touch targets */
   button,
   a,
@@ -624,7 +847,7 @@ select:focus {
     min-height: 44px;
     min-width: 44px;
   }
-  
+
   /* Reduce complex animations */
   .morph,
   .liquid {
@@ -634,11 +857,12 @@ select:focus {
 
 /* Accessibility improvements */
 @media (prefers-reduced-motion: reduce) {
+
   .typewriter,
   .text-reveal::after {
     animation: none;
   }
-  
+
   .text-reveal::after {
     display: none;
   }
@@ -654,13 +878,14 @@ select:focus {
 
 /* Print optimizations */
 @media print {
+
   .animate-bounce,
   .animate-spin,
   .animate-ping,
   .animate-pulse {
     animation: none !important;
   }
-  
+
   .bg-black {
     background: #fff !important;
     color: #000 !important;
@@ -746,8 +971,15 @@ select:focus {
 
 /* Partner logo animations */
 @keyframes partner-float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-3px); }
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
 }
 
 .partner-logo:hover {
@@ -784,7 +1016,7 @@ select:focus {
   .partner-logo {
     min-height: 80px;
   }
-  
+
   .partner-logo img {
     height: 40px;
   }
@@ -794,7 +1026,7 @@ select:focus {
   .partner-logo {
     min-height: 96px;
   }
-  
+
   .partner-logo img {
     height: 48px;
   }
@@ -805,7 +1037,7 @@ select:focus {
   .partner-logo {
     min-height: 64px;
   }
-  
+
   .partner-logo img {
     height: 32px;
   }
@@ -815,7 +1047,7 @@ select:focus {
   .partner-logo {
     min-height: 56px;
   }
-  
+
   .partner-logo img {
     height: 28px;
   }
@@ -873,7 +1105,7 @@ select:focus {
   .service-card {
     padding: 1.5rem;
   }
-  
+
   .service-card .sub-services-list li {
     font-size: 0.875rem;
   }
@@ -883,7 +1115,7 @@ select:focus {
   .service-card {
     padding: 1rem;
   }
-  
+
   .service-card .sub-services-list li {
     font-size: 0.8rem;
   }
@@ -891,55 +1123,57 @@ select:focus {
 
 /* Responsive Navbar Styles */
 @media (max-width: 1023px) {
+
   /* Mobile layout: Logo center, menu left, language right */
   nav .flex {
     position: relative;
   }
-  
-  nav .flex > *:nth-child(1) {
+
+  nav .flex>*:nth-child(1) {
     /* Mobile menu button - left */
     order: 1;
   }
-  
-  nav .flex > *:nth-child(2) {
+
+  nav .flex>*:nth-child(2) {
     /* Logo - center */
     order: 2;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
-  
-  nav .flex > *:nth-child(3) {
+
+  nav .flex>*:nth-child(3) {
     /* Desktop navigation - hidden on mobile */
     order: 3;
   }
-  
-  nav .flex > *:nth-child(4) {
+
+  nav .flex>*:nth-child(4) {
     /* Language selector - right */
     order: 4;
   }
 }
 
 @media (min-width: 1024px) {
+
   /* Desktop layout: Logo left, navigation center, language right */
-  nav .flex > *:nth-child(1) {
+  nav .flex>*:nth-child(1) {
     /* Mobile menu button - hidden on desktop */
     display: none;
   }
-  
-  nav .flex > *:nth-child(2) {
+
+  nav .flex>*:nth-child(2) {
     /* Logo - left */
     order: 1;
     position: static;
     transform: none;
   }
-  
-  nav .flex > *:nth-child(3) {
+
+  nav .flex>*:nth-child(3) {
     /* Desktop navigation - center */
     order: 2;
   }
-  
-  nav .flex > *:nth-child(4) {
+
+  nav .flex>*:nth-child(4) {
     /* Language selector - right */
     order: 3;
   }
@@ -949,64 +1183,124 @@ select:focus {
 
 /* Mobile-first responsive design */
 @media (max-width: 639px) {
+
   /* Small mobile devices */
-  .text-4xl { font-size: 1.875rem; }
-  .text-6xl { font-size: 3.75rem; }
-  .text-7xl { font-size: 4.5rem; }
-  
+  .text-4xl {
+    font-size: 1.875rem;
+  }
+
+  .text-6xl {
+    font-size: 3.75rem;
+  }
+
+  .text-7xl {
+    font-size: 4.5rem;
+  }
+
   /* Grid adjustments for mobile */
-  .grid-cols-2 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  .grid-cols-3 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-  .grid-cols-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-cols-5 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   /* Spacing adjustments */
-  .gap-16 { gap: 2rem; }
-  .gap-8 { gap: 1.5rem; }
-  .gap-6 { gap: 1rem; }
-  
+  .gap-16 {
+    gap: 2rem;
+  }
+
+  .gap-8 {
+    gap: 1.5rem;
+  }
+
+  .gap-6 {
+    gap: 1rem;
+  }
+
   /* Icon sizes for mobile */
-  .w-12.h-12 { width: 2.5rem; height: 2.5rem; }
-  .w-10.h-10 { width: 2rem; height: 2rem; }
+  .w-12.h-12 {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .w-10.h-10 {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
+
   /* Medium mobile devices */
-  .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-cols-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-cols-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .grid-cols-5 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-cols-5 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
   /* Tablet devices */
-  .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .grid-cols-5 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .grid-cols-5 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 /* Section specific responsive improvements */
 @media (max-width: 1023px) {
+
   /* Mobile and tablet layout adjustments */
   .lg\\:grid-cols-2 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  
+
   /* Reduce gaps on smaller screens */
   .gap-16 {
     gap: 2rem;
   }
-  
+
   /* Adjust text sizes for better mobile readability */
   .text-7xl {
     font-size: 3rem;
   }
-  
+
   .text-6xl {
     font-size: 2.5rem;
   }
-  
+
   .text-4xl {
     font-size: 2rem;
   }
@@ -1018,7 +1312,7 @@ select:focus {
     height: 3rem;
     padding: 0.5rem;
   }
-  
+
   .partner-logo img {
     height: 24px;
   }
@@ -1029,7 +1323,7 @@ select:focus {
     height: 4rem;
     padding: 0.75rem;
   }
-  
+
   .partner-logo img {
     height: 28px;
   }
@@ -1041,15 +1335,15 @@ select:focus {
     padding: 1rem;
     border-width: 2px;
   }
-  
+
   .service-card h3 {
     font-size: 1rem;
   }
-  
+
   .service-card p {
     font-size: 0.875rem;
   }
-  
+
   .sub-services-list li {
     font-size: 0.75rem;
   }
@@ -1061,12 +1355,12 @@ select:focus {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
   }
-  
+
   .icon-grid .icon {
     width: 2rem;
     height: 2rem;
   }
-  
+
   .icon-grid .text {
     font-size: 0.75rem;
   }
@@ -1099,31 +1393,38 @@ select:focus {
 /* Service Grid Layout Fix */
 .service-grid {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-  align-items: start; /* Kartları üstten hizala */
+  align-items: start;
+  /* Kartları üstten hizala */
 }
 
 @media (min-width: 640px) {
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    align-items: start; /* Kartları üstten hizala */
+    align-items: start;
+    /* Kartları üstten hizala */
   }
 }
 
 /* Service card height fix */
 .service-card {
-  height: fit-content; /* İçeriğe göre yükseklik */
-  min-height: auto; /* Minimum yükseklik yok */
-  align-self: start; /* Grid'de üstten hizala */
+  height: fit-content;
+  /* İçeriğe göre yükseklik */
+  min-height: auto;
+  /* Minimum yükseklik yok */
+  align-self: start;
+  /* Grid'de üstten hizala */
 }
 
 .service-card.expanded {
-  height: fit-content; /* Açık durumda da içeriğe göre */
+  height: fit-content;
+  /* Açık durumda da içeriğe göre */
   min-height: auto;
 }
 
 /* Grid container alignment */
-.service-grid > * {
-  align-self: start; /* Tüm grid item'ları üstten hizala */
+.service-grid>* {
+  align-self: start;
+  /* Tüm grid item'ları üstten hizala */
 }
 
 /* Partners Grid */
@@ -1201,37 +1502,42 @@ select:focus {
 
 /* Additional Mobile Optimizations */
 @media (max-width: 639px) {
+
   /* Reduce padding and margins on mobile */
   .py-16 {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
-  
+
   .py-32 {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  
+
   .px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
   }
-  
+
   .gap-16 {
     gap: 1.5rem;
   }
-  
+
   /* Improve touch targets on mobile */
-  button, a, .cursor-pointer {
+  button,
+  a,
+  .cursor-pointer {
     min-height: 44px;
     min-width: 44px;
   }
-  
+
   /* Better text hierarchy on mobile */
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     line-height: 1.1;
   }
-  
+
   p {
     line-height: 1.6;
   }
@@ -1243,12 +1549,12 @@ select:focus {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
-  
+
   .py-32 {
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-  
+
   .gap-16 {
     gap: 2rem;
   }
@@ -1319,19 +1625,19 @@ select:focus {
   .service-card {
     padding: 1rem;
   }
-  
+
   .service-card .service-header {
     margin-bottom: 0.75rem;
   }
-  
+
   .service-card .service-icon-title {
     gap: 0.5rem;
   }
-  
+
   .service-card h3 {
     font-size: 0.875rem;
   }
-  
+
   .service-card p {
     font-size: 0.75rem;
     margin-bottom: 0.75rem;
@@ -1342,7 +1648,7 @@ select:focus {
   .service-card {
     padding: 1.5rem;
   }
-  
+
   .service-card .service-header {
     margin-bottom: 1rem;
   }
@@ -1381,14 +1687,14 @@ select:focus {
 }
 
 /* Service card header layout */
-.service-card .relative.z-10 > div:first-child {
+.service-card .relative.z-10>div:first-child {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-.service-card .relative.z-10 > div:first-child > div:first-child {
+.service-card .relative.z-10>div:first-child>div:first-child {
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -1408,19 +1714,19 @@ select:focus {
   .service-card {
     padding: 1rem;
   }
-  
-  .service-card .relative.z-10 > div:first-child {
+
+  .service-card .relative.z-10>div:first-child {
     margin-bottom: 0.75rem;
   }
-  
-  .service-card .relative.z-10 > div:first-child > div:first-child {
+
+  .service-card .relative.z-10>div:first-child>div:first-child {
     gap: 0.5rem;
   }
-  
+
   .service-card h3 {
     font-size: 0.875rem;
   }
-  
+
   .service-card p {
     font-size: 0.75rem;
     margin-bottom: 0.75rem;
@@ -1431,8 +1737,8 @@ select:focus {
   .service-card {
     padding: 1.5rem;
   }
-  
-  .service-card .relative.z-10 > div:first-child {
+
+  .service-card .relative.z-10>div:first-child {
     margin-bottom: 1rem;
   }
 }
