@@ -1098,7 +1098,7 @@ function App() {
 
   const contactInfo = useMemo(() => [
     { icon: Mail, text: 'info@cridost.com' },
-    { icon: Phone, text: '+90 224 123 45 67' },
+    { icon: Phone, text: '+90 553 001 18 30' },
     { icon: MapPin, text: t('contact_location') }
   ], [t]);
 
