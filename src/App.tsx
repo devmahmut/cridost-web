@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
-import { ChevronDown, Menu, X, Globe, Mail, Phone, MapPin, Eye, Users, Star, Zap, ArrowRight, Code, Palette, Search, Share2, Heart, Shield, Cpu, Headphones, MessageCircle, Target, Coffee, Clock, TrendingUp, BarChart3, ShoppingCart } from 'lucide-react';
+import { ChevronDown, Menu, X, Globe, Mail, Phone, MapPin, Eye, Star, Zap, ArrowRight, Code, Heart, Shield, Cpu, Headphones, MessageCircle, Target, Coffee, Clock, TrendingUp, BarChart3, ShoppingCart, Send, CheckCircle, AlertCircle } from 'lucide-react';
 
 interface Translation {
   [key: string]: {
@@ -812,6 +812,16 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [activeSection, setActiveSection] = useState('hero');
+  
+  // Form states
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitMessage, setSubmitMessage] = useState('');
 
   const [isLanguageChanging, setIsLanguageChanging] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -1195,6 +1205,72 @@ function App() {
       return [index];
     });
   }, []);
+
+  // Form handlers
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+    // Clear status when user types
+    if (submitStatus !== 'idle') {
+      setSubmitStatus('idle');
+      setSubmitMessage('');
+    }
+  }, [submitStatus]);
+
+  const handleSubmit = useCallback(async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Form validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      setSubmitStatus('error');
+      setSubmitMessage(language === 'TR' ? 'Tüm alanlar doldurulmalıdır.' : 'All fields are required.');
+      return;
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setSubmitStatus('error');
+      setSubmitMessage(language === 'TR' ? 'Geçerli bir e-posta adresi giriniz.' : 'Please enter a valid email address.');
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus('success');
+        setSubmitMessage(data.message);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        setSubmitStatus('error');
+        setSubmitMessage(data.message);
+      }
+    } catch (error) {
+      setSubmitStatus('error');
+      setSubmitMessage(
+        language === 'TR' 
+          ? 'Mesaj gönderilirken bir hata oluştu. Lütfen tekrar deneyiniz.' 
+          : 'An error occurred while sending the message. Please try again.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  }, [formData, language]);
 
   if (isLoading) {
     return (
@@ -1683,12 +1759,30 @@ function App() {
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16 contact-grid">
               <div>
-              <form className="space-y-6 md:space-y-8">
+              <form onSubmit={handleSubmit} className="space-y-6 md:space-y-8">
+                {/* Status Messages */}
+                {submitStatus !== 'idle' && (
+                  <div className={`p-4 border-2 border-black flex items-center space-x-3 ${
+                    submitStatus === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'
+                  }`}>
+                    {submitStatus === 'success' ? (
+                      <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                    ) : (
+                      <AlertCircle className="w-5 h-5 flex-shrink-0" />
+                    )}
+                    <p className="text-sm md:text-base font-medium">{submitMessage}</p>
+                  </div>
+                )}
+
                 <div className="relative group">
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
                     placeholder={t('contact_name')}
-                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 text-base md:text-lg font-medium group-hover:shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 text-base md:text-lg font-medium group-hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <div className="absolute top-0 left-0 w-full h-full border-2 md:border-4 border-black transform translate-x-1 md:translate-x-2 translate-y-1 md:translate-y-2 -z-10 group-hover:translate-x-0.5 md:group-hover:translate-x-1 group-hover:translate-y-0.5 md:group-hover:translate-y-1 transition-transform duration-300" />
                 </div>
@@ -1696,26 +1790,47 @@ function App() {
                 <div className="relative group">
                   <input
                     type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
                     placeholder={t('contact_email')}
-                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 text-base md:text-lg font-medium group-hover:shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 text-base md:text-lg font-medium group-hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <div className="absolute top-0 left-0 w-full h-full border-2 md:border-4 border-black transform translate-x-1 md:translate-x-2 translate-y-1 md:translate-y-2 -z-10 group-hover:translate-x-0.5 md:group-hover:translate-x-1 group-hover:translate-y-0.5 md:group-hover:translate-y-1 transition-transform duration-300" />
                 </div>
                 
                 <div className="relative group">
                   <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleInputChange}
                     rows={4}
                     placeholder={t('contact_message')}
-                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 resize-none text-base md:text-lg font-medium group-hover:shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full px-4 md:px-6 py-3 md:py-4 border-2 md:border-4 border-black focus:outline-none focus:border-gray-600 transition-all duration-300 resize-none text-base md:text-lg font-medium group-hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
                   />
                   <div className="absolute top-0 left-0 w-full h-full border-2 md:border-4 border-black transform translate-x-1 md:translate-x-2 translate-y-1 md:translate-y-2 -z-10 group-hover:translate-x-0.5 md:group-hover:translate-x-1 group-hover:translate-y-0.5 md:group-hover:translate-y-1 transition-transform duration-300" />
                 </div>
                 
                 <button
                   type="submit"
-                  className="relative w-full bg-black text-white py-4 md:py-6 font-bold text-lg md:text-xl hover:bg-white hover:text-black border-2 md:border-4 border-black transition-all duration-300 group overflow-hidden"
+                  disabled={isSubmitting}
+                  className="relative w-full bg-black text-white py-4 md:py-6 font-bold text-lg md:text-xl hover:bg-white hover:text-black border-2 md:border-4 border-black transition-all duration-300 group overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                 >
-                  <span className="relative z-10">{t('contact_send')}</span>
+                  <span className="relative z-10 flex items-center space-x-2">
+                    {isSubmitting ? (
+                      <>
+                        <div className="w-5 h-5 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                        <span>{language === 'TR' ? 'Gönderiliyor...' : 'Sending...'}</span>
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5" />
+                        <span>{t('contact_send')}</span>
+                      </>
+                    )}
+                  </span>
                   <div className="absolute inset-0 bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
                 </button>
               </form>
